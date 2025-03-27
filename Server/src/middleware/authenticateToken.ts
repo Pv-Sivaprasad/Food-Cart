@@ -12,7 +12,7 @@ export interface CustomeRequest extends Request {
 
 const authenticateToken = (req: CustomeRequest, res: Response, next: NextFunction) => {
  
-    
+     
     
     try {
         const token = req.headers['authorization']

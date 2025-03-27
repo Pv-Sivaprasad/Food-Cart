@@ -17,5 +17,7 @@ export class BaseRepository<T extends Document> implements IBaseRepository<T> {
     return await this.model.findById(id);
   }
 
+  
+  
  
 }

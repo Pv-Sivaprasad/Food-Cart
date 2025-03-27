@@ -1,6 +1,6 @@
 import express from 'express'
 import authenticateToken from '../../middleware/authenticateToken'
-import { userController } from '../../config/container'
+import { userController } from '../../config/userContainer'
 import multer from 'multer'
 
 

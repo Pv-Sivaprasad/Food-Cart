@@ -3,7 +3,7 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import { connectDataBase } from './config/dbConfig'
 import userRoute from './routes/user/userRoutes'
-
+import adminRoute from './routes/admin/adminRoute'
 
 dotenv.config()
 
@@ -20,7 +20,7 @@ app.use(cors({
 connectDataBase()
 
 app.use('/api/user',userRoute)
-// app.use('/api/admin',)
+app.use('/api/admin',adminRoute)
 // app.use('/api/menu',)
 
 app.listen(PORT,()=>{console.log(`Food_cart running on http://localhost:${PORT} `)})
